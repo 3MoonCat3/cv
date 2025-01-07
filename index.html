@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/favicon32.png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/favicon16.png" href="/favicon-16x16.png" sizes="16x16">
+
+<title>FERN</title>
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand">fern</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#about-me">Обо мне</a></li>
+                    <li><a>Резюме</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<!-- Home Section -->
+
+<section id="home" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <h1>Владислав Гордеев</h1>
+                    <h4>QA engineer</h4>
+
+                     <!-- Скрытый контент -->
+                    <div id="content" class="hidden">
+                         <h2>Послушайте!
+                              Ведь, если звезды зажигают —
+                              значит — это кому-нибудь нужно?
+                              Значит — кто-то хочет, чтобы они были?
+                              Значит — кто-то называет эти плево́чки жемчужиной?</h2>
+                     </div>
+ 
+                     <!-- Кнопка Показать Больше -->
+                     <button onclick="toggleContent()">Показать больше</button>
+ 
+                     <script>
+                         function toggleContent() {
+                             const content = document.getElementById('content');
+                             const button = document.querySelector('button');
+
+                             if (content.classList.contains('hidden')) {
+                                 content.classList.remove('hidden'); // Убираем класс hidden
+                                 button.textContent = 'Скрыть'; // Меняем текст кнопки на "Скрыть"
+                             } else {
+                                 content.classList.add('hidden'); // Добавляем класс hidden обратно
+                                 button.textContent = 'Показать больше'; // Возвращаем исходный текст кнопки
+                             }
+                         }
+                     </script>
+ 
+                </div>
+           </div>
+      </div>
+ </section>
+
+<!-- Blog Section -->
+
+<div id="about-me"></div>
+<section id="blog">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                   <img src="images/blog-image1.jpg" class="img-responsive" alt="Blog Image">
+                              </a>
+                         </div>
+                         <div class="blog-post-title">
+                              <h3>Обо мне</h3>
+                         </div>
+                         <div class="blog-post-format">
+                         <div class="blog-post-des">
+                              <p>Мне 27 лет, проживаю в Ставропольском крае. Люблю всё, что связанно с технологиями и искусством. В людях больше всего ценю саморазвитие и взаимопонимание.</p>
+
+                         </div>
+                    </div>
+
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                   <img src="images/blog-image2.jpg" class="img-responsive" alt="Blog Image">
+                              </a>
+                         </div>
+                         <div class="blog-post-title">
+                              <h3>Уровень английского</h3>
+                         </div>
+                         <div class="blog-post-format">
+                         <div class="blog-post-des">
+                              <p>Advanced С1. Имею лингвистическое образование</p>
+
+                         </div>
+                    </div>
+
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                   <img src="images/blog-image3.jpg" class="img-responsive" alt="Blog Image">
+                              </a>
+                         </div>
+                         <div class="blog-post-title">
+                              <h3>Умею работать</h3>
+                         </div>
+                         <div class="blog-post-format">
+                         <div class="blog-post-des">
+                              <p>Developer 
+                                   Tools
+                                   Postman
+                                   Swagger
+                                   MySQL
+                                   REST-API, SOAP
+                                   Charles
+                                   Kibana
+                                   HTML, CSS 
+                                   Figma
+                                   Grafana
+                                   Linux</p>
+
+                         </div>
+                    </div>
+                    </div>
+
+<!-- Footer Section -->
+
+<footer>
+     <div id="contact"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Послушайте!</h3>
+                    <p>  Ведь, если звезды
+                         зажигают —
+                         значит — это кому-нибудь нужно?
+                         Значит — это необходимо,
+                         чтобы каждый вечер
+                         над крышами
+                         загоралась хоть одна звезда?!</p>
+                    <div class="footer-copyright">
+                         <p></p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Контакты</h3>
+                    <p><i class="fa fa-globe"></i> Россия, Ставропольский край</p>
+                    <p><i class="fa fa-phone"></i> 8 (919) ***-09-39</p>
+                    <p><i class="fa fa-save"></i> MoonCat.v@yandex.ru</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="https://vk.com/vladislavshmidt" target="_blank" class="fa fa-vk"></a></li>
+                         <li><a href="https://t.me/PixellCat" target="_blank" class="fa fa-paper-plane"></a></li>
+                         <li><a href="#" class="fa fa-github"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
