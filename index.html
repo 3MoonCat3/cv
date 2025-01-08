@@ -13,6 +13,13 @@
 <link rel="icon" type="image/favicon32.png" href="images/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/favicon16.png" href="images/favicon-16x16.png" sizes="16x16">
 
+<script>
+     window.onload = function () {
+         window.scrollTo({ top: 0, behavior: 'smooth' }); // Плавный скроллинг
+         // Или без плавного скроллинга: window.scrollTo(0, 0);
+     };
+ </script>
+
 <title>FERN</title>
 
 
@@ -51,7 +58,6 @@
                <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="#about-me">Обо мне</a></li>
-                    <li><a>Резюме</a></li>
                     <li><a href="#contact">Контакты</a></li>
                </ul>
           </div>
@@ -73,11 +79,14 @@
 
                      <!-- Скрытый контент -->
                     <div id="content" class="hidden">
-                         <h2>Послушайте!
-                              Ведь, если звезды зажигают —
-                              значит — это кому-нибудь нужно?
-                              Значит — кто-то хочет, чтобы они были?
-                              Значит — кто-то называет эти плево́чки жемчужиной?</h2>
+                         <h2> <ul>
+                              <li>Послушайте!</li>
+                              <li>Ведь, если звезды зажигают —</li>
+                                   <li>значит — это кому-нибудь нужно?</li>
+                                        <li>Значит — кто-то хочет, чтобы они были?</li>
+                                             <li> Значит — кто-то называет эти плево́чки жемчужиной?</li>
+                    </ul>
+               </h2>
                      </div>
  
                      <!-- Кнопка Показать Больше -->
@@ -180,15 +189,15 @@
 
                <div class="col-md-5 col-md-offset-1 col-sm-6">
                     <h3>Послушайте!</h3>
-                    <p>  Ведь, если звезды
-                         зажигают —
-                         значит — это кому-нибудь нужно?
-                         Значит — это необходимо,
-                         чтобы каждый вечер
-                         над крышами
-                         загоралась хоть одна звезда?!</p>
-                    <div class="footer-copyright">
-                         <p></p>
+                    <ul>  
+                         <li>Ведь, если звезды</li>
+                         <li>зажигают —</li>
+                         <li>значит — это кому-нибудь нужно?</li>
+                         <li>Значит — это необходимо,</li>
+                         <li>чтобы каждый вечер</li>
+                         <li>над крышами</li>
+                         <li>загоралась хоть одна звезда?!</li>
+                    </ul>
                     </div>
                </div>
 
@@ -207,7 +216,7 @@
                     <ul class="social-icon">
                          <li><a href="https://vk.com/vladislavshmidt" target="_blank" class="fa fa-vk"></a></li>
                          <li><a href="https://t.me/PixellCat" target="_blank" class="fa fa-paper-plane"></a></li>
-                         <li><a href="#" class="fa fa-github"></a></li>
+                         <li><a href="https://github.com/3MoonCat3?tab=repositories" target="_blank" class="fa fa-github"></a></li>
                     </ul>
                </div>
                

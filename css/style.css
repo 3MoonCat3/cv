@@ -636,21 +636,26 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 footer {
-    background: #000;
-    color: #ffffff;
-    padding: 80px 0px;
-    position: absolute;
+  display: flex;
+  justify-content: center; /* Центровка по горизонтали */
+  align-items: center;     /* Центровка по вертикали */
+  height: 650px;           /* Пример высоты подвала */
+  background-color: #000102; /* Цвет фона для примера */
+}
+
+footer > * { /* Применяется ко всем дочерним элементам внутри footer */
+  margin: 0 10px; /* Отступ между элементами */
 }
 
 footer .col-md-4 .fa {
-  color: #ffffff;
-  padding-right: 8px;
+color: #ffffff;
+text-align: justify;
 }
 
 footer hr {
-  border-color: #121212;
-  margin-top: 62px;
-  margin-bottom: 42px;
+border-color: #121212;
+margin-top: 62px;
+margin-bottom: 42px;
 }
 
 
